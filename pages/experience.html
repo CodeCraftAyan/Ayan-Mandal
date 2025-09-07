@@ -1,0 +1,27 @@
+---
+
+layout: base
+title: Experience
+permalink: /experience/
+
+---
+
+<div class="pt-4">
+    <ul class="flex flex-col gap-4">
+        {% if site.experience != empty %}
+            {% for exp in site.experience %}
+                <li class="animate-slide-up">
+                    <a href="{{ exp.url }}" class="flex flex-wrap items-center justify-between px-4 py-3 border-b border-gray-500 shadow hover:bg-gray-800 transition duration-300 cursor-pointer">
+                        <span class="animate-slide-left text-xl font-semibold text-white">
+                            <i class="text-{{ exp.i_color }}-400 bi bi-{{ exp.icon }}"></i>
+                            {{ exp.title }}
+                        </span>
+                        <span class="animate-slide-right text-sm text-gray-400">{{ exp.date | date: "%B %d, %Y" }}</span>
+                    </a>
+                </li>
+            {% endfor %}
+        {% else %}
+            <p class="text-orange-400 py-4 animate-slide-right">Experience not shared yet</p>
+        {% endif %}
+    </ul>
+</div>

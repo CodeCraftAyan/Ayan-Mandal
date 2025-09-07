@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Pokedex Web App",
+    "description": "A web app that fetches Pokémon data from an API.",
+    "image": null,
+    "github": "https://github.com/CodeCraftAyan/PokedexWebApp",
+    "visit": "https://codecraftayan.github.io/PokedexWebApp/",
+    "date": "2025-01-26",
+    "label": "Web App"
+  },
+  {
+    "title": "Python Mini Projects",
+    "description": "A collection of Python CLI mini projects covering games, utilities, and API-based apps in single Github Repository.",
+    "image": null,
+    "github": "https://github.com/CodeCraftAyan/Python-Mini-Projects",
+    "visit": null,
+    "date": "2024-10-27",
+    "label": ["Game", "CLI"]
+  },
+  {
+    "title": "Random Anime Meme App",
+    "description": "Fetches and displays random anime memes from an external API, bringing fun to every refresh.",
+    "image": null,
+    "github": "https://github.com/CodeCraftAyan/Random-Anime-Meme-App",
+    "visit": "https://random-anime-meme-app.onrender.com",
+    "date": "2025-07-26",
+    "label": "Web App"
+  },
+  {
+    "title": "Flask Todo App",
+    "description": "A lightweight web application built with Flask that helps organize and manage personal tasks.",
+    "image": null,
+    "github": "https://github.com/CodeCraftAyan/Flask-Todo-App",
+    "visit": null,
+    "date": "2025-08-02",
+    "label": "Web App"
+  },
+  {
+    "title": "Devil Fruit Catcher",
+    "description": "A Pygame project I made out of personal interest.",
+    "image": null,
+    "github": "https://github.com/CodeCraftAyan/Devil-Fruit-Catcher",
+    "visit": null,
+    "date": "2025-09-05",
+    "label": "Game"
+  },
+  {
+    "title": "Ayan Mandal (Portfolio)",
+    "description": "My portfolio website is built with Jekyll.",
+    "image": null,
+    "github": "https://github.com/CodeCraftAyan/Flask-Todo-App",
+    "visit": null,
+    "date": "2025-09-07",
+    "label": "Web App"
+  }
+]

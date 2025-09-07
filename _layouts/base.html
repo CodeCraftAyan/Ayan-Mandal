@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }} | {{ site.title }}</title>
+
+  {% seo %}
+
+  <link rel="shortcut icon" href="{{ site.baseurl }}/assets/image/favicon.ico" type="image/x-icon" class="rounded-full">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Comfortaa:wght@300..700&family=Doto:wght@100..900&family=Jersey+10&family=Pixelify+Sans:wght@400..700&family=Playwrite+DE+Grund:wght@100..400&family=Rock+Salt&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/markdown.css">
+
+</head>
+<body class="min-h-screen flex flex-col bg-gray-900 text-white">
+
+    <header class="w-full max-w-4xl mx-auto flex flex-col sm:flex-row md:flex-row  md:items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 py-4">
+
+        <a href="{{ site.baseurl }}/">
+            <h2 class="text-2xl font-bold text-gray-100 animate-slide-down">Ayan Mandal</h2>
+        </a>
+        
+        <nav class="animate-slide-right">
+            <ul class="flex items-end sm:items-center gap-2 sm:gap-4 text-gray-400">
+                <li><a href="{{ site.baseurl }}/me/" class="hover:text-gray-300 transition">Me</a></li>
+                <li><a href="{{ site.baseurl }}/blogs/" class="hover:text-gray-300 transition">Blogs</a></li>
+                <li><a href="{{ site.baseurl }}/Experience/" class="hover:text-gray-300 transition">Experience</a></li>
+                <li><a href="{{ site.baseurl }}/projects/" class="hover:text-gray-300 transition">Projects</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="flex-grow w-full max-w-4xl px-4 sm:px-6 lg:px-8 py-4 mx-auto">
+
+        {{ content }}
+
+    </main>
+
+    <footer class="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 bg-gray-900 text-gray-400">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+            
+            <div class="text-sm text-center sm:text-left">
+            <p>&copy; <span id="year"></span> Ayan Mandal. All rights reserved.</p>
+            </div>
+
+            <ul class="flex gap-6 text-sm">
+            <li>
+                <a href="https://github.com/CodeCraftAyan" target="_blank" 
+                class="bi bi-github hover:text-white transition-colors">
+                GitHub
+                </a>
+            </li>
+            <li>
+                <a id="popup-btn" 
+                class="popup-btn bi bi-envelope hover:text-white transition-colors cursor-pointer">
+                Contact
+                </a>
+            </li>
+            </ul>
+        </div>
+    </footer>
+    
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+
+    <div id="open-popup" class="hidden fixed bottom-5 left-5 md:bottom-10 md:left-10 bg-emerald-500 backdrop-blur-md text-white p-6 shadow-2xl w-[90%] max-w-sm transform transition-all duration-500 ease-in-out animate-slide-left">
+
+        <div class="flex justify-between items-center border-b border-emerald-400 pb-3">
+            <h2 class="text-base md:text-lg font-medium tracking-wide">Contact Information</h2>
+            <button id="close-popup" 
+                    class="ml-4 text-xl font-bold hover:text-red-400 transition-colors duration-200">
+                <i class="bi bi-x"></i>
+            </button>
+        </div>
+
+        <div class="mt-4 space-y-1 text-sm md:text-base leading-relaxed">
+            <p class="font-light text-gray-200">Email</p>
+            <p class="font-medium text-white">ayan.mandal.work@gmail.com</p>
+        </div>
+    </div>
+
+    <script src="{{ site.baseurl }}/assets/js/randomColor.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/popup.js"></script>
+
+</body>
+</html>

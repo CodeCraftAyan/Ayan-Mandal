@@ -1,0 +1,38 @@
+title: "Ayan Mandal"
+description: "Personal portfolio showcasing my projects, coding skills, and blog."
+baseurl: ""
+url: "https://CodeCraftAyan.github.io"
+
+author:
+  name: "Ayan Mandal"
+  email: "ayan.mandal.work@gmail.com"
+  github: "CodeCraftAyan"
+
+social:
+  name: "Ayan Mandal"
+  links:
+    - https://github.com/CodeCraftAyan
+
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  pages:
+    output: true
+  blog:
+    output: true
+    permalink: /blogs/:title/
+  experience:
+    output: true
+    permalink: /experience/:title/
+
+defaults:
+  - scope:
+      path: "pages"
+      type: "pages"
+    values:
+      layout: "default"

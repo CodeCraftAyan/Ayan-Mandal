@@ -1,0 +1,161 @@
+---
+
+layout: base
+title: Home
+permalink: /
+
+---
+
+<div>
+    <div
+        class="mt-4 h-48 animate-slide-up colorBox rounded-lg overflow-hidden [mask-image:linear-gradient(to_bottom,black,transparent)]">
+        <img src="{{ site.baseurl }}/assets/image/base/banner.gif" alt="Profile Banner" class="w-full h-auto block p-4">
+    </div>
+
+
+    <div class="flex flex-wrap items-center gap-6 my-10">
+
+        <div class="relative h-40 w-40 animate-slide-left">
+            <div
+                class="absolute inset-0 overflow-hidden rounded-full border-2 border-l-0 border-r-0 border-gray-500 animate-spin">
+            </div>
+
+            <div
+                class="absolute h-[95%] w-[95%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full">
+                <img src="{{ site.baseurl }}/assets/image/base/profile_pic.jpg" alt="profile image" class="h-full w-full object-cover">
+            </div>
+        </div>
+
+        <div class="pl-6 sm:pl-0">
+            <h2 class="text-xl sm:text-3xl md:text-3xl lg:text-3xl mb-2 animate-slide-right">Hey, I'm Ayan
+                <span>👋</span></h2>
+            <p class="flex items-center gap-2 text-sm text-gray-800 dark:text-gray-100 animate-slide-left">
+                <span class="relative flex h-3 w-3">
+                    <span
+                        class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+                    <span class="relative inline-flex h-3 w-3 rounded-full bg-emerald-500"></span>
+                </span>
+                Available to Collaborate and Grow
+            </p>
+            <p class="animate-slide-right"><Span class="bi bi-geo-alt"></Span> India</p>
+        </div>
+
+    </div>
+
+    <div class="px-6 animate-slide-down">
+        <p>
+            I’m a passionate developer specializing in Python, AI, and web technologies. I focus on building scalable
+            solutions and transforming ideas into practical, user-friendly applications that make a real impact.
+        </p>
+    </div>
+
+    <div class="px-6 py-10 animate-slide-up">
+
+        <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 text-sm md:text-md">
+            <li class="p-2 border border-blue-300 text-blue-300 rounded">
+                <i class="bi bi-braces"></i>
+                C/C++
+            </li>
+            <li class="p-2 border border-orange-300 text-orange-300 rounded w-full">
+                <i class="bi bi-filetype-html"></i>
+                HTML 5
+            </li>
+            <li class="p-2 border border-blue-300 text-blue-300 rounded">
+                <i class="bi bi-filetype-css"></i>
+                CSS
+            </li>
+            <li class="p-2 border border-yellow-300 text-yellow-300 rounded">
+                <i class="bi bi-filetype-js"></i>
+                JavaScript
+            </li>
+            <li class="p-2 border border-emerald-300 text-emerald-300 rounded">
+                <i class="bi bi-filetype-py"></i>
+                Python
+            </li>
+            <li class="p-2 border border-indigo-300 text-indigo-300 rounded">
+                <i class="bi bi-folder"></i>
+                Tailwind CSS
+            </li>
+            <li class="p-2 border border-rose-300 text-rose-300 rounded">
+                <i class="bi bi-git"></i>
+                Git
+            </li>
+            <li class="p-2 border border-gray-300 text-gray-300 rounded">
+                <i class="bi bi-github"></i>
+                Github
+            </li>
+            <li class="p-2 border border-green-500 text-green-500 rounded">
+                <i class="bi bi-folder"></i>
+                Django
+            </li>
+            <li class="p-2 border border-gray-300 text-gray-300 rounded">
+                <i class="bi bi-folder"></i>
+                Flask
+            </li>
+            <li class="p-2 border border-violet-300 text-violet-300 rounded">
+                <i class="bi bi-gear"></i>
+                Rest API
+            </li>
+            <li class="p-2 border border-red-300 text-red-300 rounded">
+                <i class="bi bi-database"></i>
+                Database
+            </li>
+        </ul>
+
+    </div>
+
+
+    <div class="mt-4 mb-10">
+
+        <p class="text-gray-400 bg-gray-800 text-sm p-2 mb-4 overflow-hidden rounded w-32 animate-slide-left">Recent projects</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-4">
+            {% assign sorted_projects = site.data.projects | sort: "date" | reverse %}
+            {% for project in sorted_projects limit:2 %}
+                <a href="{{ project.github }}" target="_blank">  
+                    <div class="max-w-sm bg-gray-900 hover:bg-gray-800 cursor-pointer  text-white rounded-xl shadow-lg overflow-hidden border border-gray-700 hover:shadow-xl transition-shadow duration-300 animate-slide-up">
+                        <div class="h-40 overflow-hidden">
+                            {% if project.image %}
+                            <img src="{{ project.image }}" alt="{{ project.title }}" class="h-full w-full object-cover animate-slide-up">
+                            {% else %}
+                            <img src="{{ site.baseurl }}/assets/image/project/default.gif" alt="{{ project.title }}" class="h-full w-full object-cover animate-slide-up">
+                            {% endif %}
+                        </div>
+                        <div class="p-4 space-y-2">
+                            <h2 class="text-xl font-semibold">{{ project.title }}</h2>
+                            <p class="text-sm text-gray-400">
+                                {{ project.description | truncate: 40, "..." }}
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+
+        <a href="{{ site.baseurl }}/projects/" class="text-gray-200 hover:text-gray-400">More projects <i class="bi bi-arrow-right"></i></a>
+
+    </div>
+
+    <div class="mt-4 mb-10">
+
+        <p class="text-gray-400 bg-gray-800 text-sm p-2 mb-4 overflow-hidden rounded w-28 animate-slide-left">Recent posts</p>
+
+        <div class="flex flex-col pb-4 animate-slide-right">
+            {% if site.blog != empty %}
+                {% assign sorted_posts = site.blog | sort: "date" | reverse %}
+                {% for post in sorted_posts limit:4 %}
+                    <a href="{{ post.url }}" class="p-3 cursor-pointer hover:bg-gray-800 rounded-md hover:shadow-lg">
+                        <h2 class="text-gray-200">{{ post.title }}</h2>
+                        <p class="text-gray-400 text-sm">{{ post.date | date: "%B %d, %Y" }}</p>
+                    </a>
+                {% endfor %}
+            {% else %}
+                <p class="text-gray-400 py-4 animate-slide-right">Blogs not posted yet.</p>
+            {% endif %}
+        </div>
+
+        <a href="{{ site.baseurl }}/blog/" class="text-gray-200 hover:text-gray-400">More posts <i class="bi bi-arrow-right"></i></a>
+
+    </div>
+
+</div>

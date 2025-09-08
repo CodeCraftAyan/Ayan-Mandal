@@ -11,8 +11,8 @@ permalink: /experience/
         {% if site.experience != empty %}
             {% for exp in site.experience %}
                 <li class="animate-slide-up">
-                    <a href="{{ exp.url | relative_url }}" class="flex flex-wrap items-center justify-between px-4 py-3 border-b border-gray-500 shadow hover:bg-gray-800 transition duration-300 cursor-pointer">
-                        <span class="animate-slide-left text-xl font-semibold text-white">
+                    <a href="{{ exp.url | relative_url }}" class="flex flex-wrap items-center justify-between px-0 md:px-4 py-3 border-b border-gray-500 shadow hover:bg-gray-800 transition duration-300 cursor-pointer">
+                        <span class="animate-slide-left text-md md:text-xl font-semibold text-white">
                             <i class="text-{{ exp.i_color }}-400 bi bi-{{ exp.icon }}"></i>
                             {{ exp.title }}
                         </span>

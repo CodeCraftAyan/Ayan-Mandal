@@ -24,7 +24,7 @@ permalink: /projects/
     </div>
 
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-0 md:p-4">
 
         {% if site.data.projects != empty %}
             {% assign sorted_projects = site.data.projects | sort: "date" | reverse %}

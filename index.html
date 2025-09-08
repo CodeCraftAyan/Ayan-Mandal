@@ -8,13 +8,11 @@ permalink: /
 
 <div>
     <div
-        class="mt-4 h-48 animate-slide-up colorBox rounded-lg overflow-hidden [mask-image:linear-gradient(to_bottom,black,transparent)]">
+        class="mt-4 h-32 md:h-48 animate-slide-up colorBox rounded-lg overflow-hidden [mask-image:linear-gradient(to_bottom,black,transparent)]">
         <img src="{{ site.baseurl }}/assets/image/base/banner.gif" alt="Profile Banner" class="w-full h-auto block p-4">
     </div>
 
-
-    <div class="flex flex-wrap items-center gap-6 my-10">
-
+    <div class="flex flex-wrap items-center gap-6 mt-4 mb-6 md:my-8">
         <div class="relative h-40 w-40 animate-slide-left">
             <div
                 class="absolute inset-0 overflow-hidden rounded-full border-2 border-l-0 border-r-0 border-gray-500 animate-spin">
@@ -26,8 +24,8 @@ permalink: /
             </div>
         </div>
 
-        <div class="pl-6 sm:pl-0">
-            <h2 class="text-xl sm:text-3xl md:text-3xl lg:text-3xl mb-2 animate-slide-right">Hey, I'm Ayan
+        <div class="pl-2">
+            <h2 class="text-2xl sm:text-3xl md:text-3xl lg:text-3xl mb-2 animate-slide-right">Hey, I'm Ayan
                 <span>👋</span></h2>
             <p class="flex items-center gap-2 text-sm text-gray-800 dark:text-gray-100 animate-slide-left">
                 <span class="relative flex h-3 w-3">
@@ -42,16 +40,16 @@ permalink: /
 
     </div>
 
-    <div class="px-6 animate-slide-down">
+    <div class="px-2 animate-slide-down">
         <p>
             I’m a passionate developer specializing in Python, AI, and web technologies. I focus on building scalable
             solutions and transforming ideas into practical, user-friendly applications that make a real impact.
         </p>
     </div>
 
-    <div class="px-6 py-10 animate-slide-up">
+    <div class="px-2 py-10 animate-slide-up">
 
-        <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 text-sm md:text-md">
+        <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 text-xs md:text-base">
             <li class="p-2 border border-blue-300 text-blue-300 rounded">
                 <i class="bi bi-braces"></i>
                 C/C++
@@ -109,7 +107,7 @@ permalink: /
 
         <p class="text-gray-400 bg-gray-800 text-sm p-2 mb-4 overflow-hidden rounded w-32 animate-slide-left">Recent projects</p>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-0 pb-4 md:p-4">
             {% assign sorted_projects = site.data.projects | sort: "date" | reverse %}
             {% for project in sorted_projects limit:2 %}
                 <a href="{{ project.github }}" target="_blank">  
@@ -144,7 +142,7 @@ permalink: /
             {% if site.blog != empty %}
                 {% assign sorted_posts = site.blog | sort: "date" | reverse %}
                 {% for post in sorted_posts limit:4 %}
-                    <a href="{{ post.url }}" class="p-3 cursor-pointer hover:bg-gray-800 rounded-md hover:shadow-lg">
+                    <a href="{{ post.url | relative_url }}" class="p-2 cursor-pointer hover:bg-gray-800 rounded-md hover:shadow-lg">
                         <h2 class="text-gray-200">{{ post.title }}</h2>
                         <p class="text-gray-400 text-sm">{{ post.date | date: "%B %d, %Y" }}</p>
                     </a>

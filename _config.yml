@@ -1,15 +1,18 @@
 title: "Ayan Mandal"
-description: "The official portfolio of Ayan Mandal, showcasing software projects, technical blogs, and experience in coding and development."
+description: "Ayan Mandal’s Developer Portfolio."
+tagline: "A showcase of my Python projects, web apps, games, technical blogs, and hands-on experience in coding and technology development."
 url: "https://CodeCraftAyan.github.io"
-baseurl: "/ayan-mandal"
+baseurl: "/Ayan-Mandal"
+
+keywords: ["Tailwindcss", "Javascript", "Python", "Django", "Flask", "API", "Software Engineering", "Web Development", "AI", "Machine Learning", "Portfolio", "Coding Projects"]
 
 author:
   name: "Ayan Mandal"
   email: "ayan.mandal.work@gmail.com"
   github: "CodeCraftAyan"
 
-logo: "/assets/image/favicon.ico"
-image: "/assets/image/base/preview.jpg" 
+logo: /assets/image/base/preview.jpg
+image: /assets/image/base/preview.jpg
 
 social:
   name: "Ayan Mandal"
@@ -22,6 +25,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-last-modified-at
 
 collections:
   pages:

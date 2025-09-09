@@ -2,6 +2,15 @@
   font-family: "Comfortaa", sans-serif;
 }
 
+html, body {
+  overflow-x: hidden !important;
+}
+
+img, div, ul, li, section {
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+
 @keyframes slide-up {
   0% {
     transform: translateY(50px);

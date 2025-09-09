@@ -1,5 +1,5 @@
 title: "Ayan Mandal"
-description: "Personal portfolio showcasing my projects, coding skills, and blog."
+description: "The official portfolio of Ayan Mandal, showcasing software projects, technical blogs, and experience in coding and development."
 url: "https://CodeCraftAyan.github.io"
 baseurl: "/ayan-mandal"
 
@@ -8,7 +8,8 @@ author:
   email: "ayan.mandal.work@gmail.com"
   github: "CodeCraftAyan"
 
-logo: "/assets/image/favicon.ico" 
+logo: "/assets/image/favicon.ico"
+image: "/assets/image/base/preview.jpg" 
 
 social:
   name: "Ayan Mandal"

@@ -30,5 +30,4 @@ I believe consistent growth comes from practice, contribution, and learning. My 
 
 ---
 
-⭐ Thanks for stopping by! I’m continually building projects, writing about my experiences, and improving my problem-solving skills follow along as I keep growing both technically and professionally.  
-
+⭐ Thanks for stopping by! I’m building projects, sharing my experiences, and improving my skills as I continue to grow.  

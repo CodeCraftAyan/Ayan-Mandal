@@ -1,3 +1,5 @@
+lang: "en"
+
 title: "Ayan Mandal"
 description: "Ayan Mandal’s Developer Portfolio."
 tagline: "A showcase of my Python projects, web apps, games, technical blogs, and hands-on experience in coding and technology development."
@@ -43,3 +45,9 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+
+seo:
+  canonical: true
+
+webmaster_verifications:
+  google: "pXFb89g-h3cP4d_VWRPw6Q3B7stBGj5KTh5usqA_avg"

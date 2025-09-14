@@ -1,23 +1,24 @@
-lang: "en"
+lang: en
 
-title: "Ayan Mandal"
-description: "Ayan Mandal’s Developer Portfolio."
-tagline: "A showcase of my Python projects, web apps, games, technical blogs, and hands-on experience in coding and technology development."
+title: Ayan Mandal
+description: >
+  Ayan Mandal’s Developer Portfolio.
+tagline: A showcase of my Python projects, web apps, games, technical blogs, and hands-on experience in coding and technology development.
 url: "https://CodeCraftAyan.github.io"
 baseurl: "/Ayan-Mandal"
 
-keywords: ["Tailwindcss", "Javascript", "Python", "Django", "Flask", "API", "Software Engineering", "Web Development", "AI", "Machine Learning", "Portfolio", "Coding Projects"]
+keywords: [Tailwindcss, Javascript, Python, Django, Flask, API, Software Engineering, Web Development, AI, Machine Learning, Portfolio, Coding Projects]
 
 author:
-  name: "Ayan Mandal"
-  email: "ayan.mandal.work@gmail.com"
-  github: "CodeCraftAyan"
+  name: Ayan Mandal
+  email: ayan.mandal.work@gmail.com
+  github: CodeCraftAyan
 
-logo: /assets/image/base/preview.png
-image: /assets/image/base/preview.png
+logo: /assets/image/favicon.ico
+image: /assets/image/preview.png
 
 social:
-  name: "Ayan Mandal"
+  name: Ayan Mandal
   links:
     - https://github.com/CodeCraftAyan
 

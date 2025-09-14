@@ -3,9 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {% if page.title and page.title != "" %}
   <title>{{ page.title }} | {{ site.title }}</title>
+  {% else %}
+  <title>{{ site.title }}</title>
+  {% endif %}
 
   {% seo %}
+
+  <meta property="og:image" content="{{ site.image | absolute_url }}" />
+  <meta name="twitter:image" content="{{ site.image | absolute_url }}" />
 
   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/image/favicon.ico" type="image/x-icon" class="rounded-full">
 

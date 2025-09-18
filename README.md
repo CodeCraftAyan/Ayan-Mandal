@@ -1,12 +1,14 @@
 <div>
   <img align="right" width="50" alt="logo" src="https://github.com/user-attachments/assets/d001e212-aac3-4d3a-966f-039167a4f0c8" />
-  <h1 align="left">Ayan's Personal Portfolio</h1>
+  <h1 align="left">Ayan's Developer Portfolio</h1>
   <h3>
-    <a href="https://github.com/CodeCraftAyan" target="_blank">CodeCraftAyan</a>
+    <a href="https://github.com/CodeCraftAyan" target="_blank">Github</a>
     &nbsp;&nbsp;
-    <a href="mailto:ayan.mandal.work@gmail.com">Email me</a>
+    <a href="mailto:ayan.mandal.work@gmail.com">Email</a>
     &nbsp;&nbsp;
     <a href="https://codecraftayan.github.io/Ayan-Mandal/" target="_blank">Portfolio</a>
+    &nbsp;&nbsp;
+    <a href="https://www.linkedin.com/in/ayan-manda1/" target="_blank">Linkedin</a>
   </h3>
 </div>
 

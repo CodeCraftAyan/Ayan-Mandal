@@ -3,11 +3,11 @@
   <h1 align="left">Ayan's Developer Portfolio</h1>
   <h3>
     <a href="https://github.com/CodeCraftAyan" target="_blank">Github</a>
-    &nbsp;&nbsp;
+    &nbsp; | &nbsp;
     <a href="mailto:ayan.mandal.work@gmail.com">Email</a>
-    &nbsp;&nbsp;
+    &nbsp; | &nbsp;
     <a href="https://codecraftayan.github.io/Ayan-Mandal/" target="_blank">Portfolio</a>
-    &nbsp;&nbsp;
+    &nbsp; | &nbsp;
     <a href="https://www.linkedin.com/in/ayan-manda1/" target="_blank">Linkedin</a>
   </h3>
 </div>

@@ -8,21 +8,30 @@ permalink: /blogs/
 
 <div>
 
-    <div class="flex flex-col gap-2">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-0 md:p-4">
         {% if site.blog != empty %}
             {% assign sorted_posts = site.blog | sort: "date" | reverse %}
             {% for post in sorted_posts %}
 
-            <a href="{{ post.url | relative_url }}">
-                <div class="rounded p-4 hover:bg-gray-800 hover:shadow-xl cursor-pointer flex items-center gap-4">
-                    <div class="colorBox h-20 w-20 bg-white rounded m-1 p-2 animate-slide-left">
-                    </div>
-                    <div class="animate-slide-right">
-                        <h2 class="text-mb md:text-lg text-gray-100">{{ post.title }}</h2>
-                        <p class="text-xs md:text-sm text-gray-300">{{ post.date | date: "%B %d, %Y" }}</p>
-                        <p class="text-xs md:text-sm mt-3 text-gray-400">{{ post.excerpt | strip_html | truncate: 150 }}</p>
-                    </div>
+            <a href="{{ post.url | relative_url }}" class="block">
+              <div class="project-card max-w-sm bg-gray-900 text-white rounded-xl shadow-lg overflow-hidden border border-gray-700 hover:border-gray-500 hover:shadow-xl transition-shadow duration-300 animate-slide-up">
+                <div class="absolute top-2 right-2 z-10 px-3 py-2 rounded-l bg-gray-700 transition hover:text-indigo-400">
+                  <i class="bi bi-box-arrow-up-right"></i>
                 </div>
+                <div class="h-48 overflow-hidden">
+                    {% if post.image %}
+                        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="h-full w-full object-cover animate-slide-up">
+                    {% else %}
+                        <img src="{{ site.baseurl }}/assets/image/blog/default.gif" alt="{{ post.title }}" class="h-full w-full object-cover animate-slide-up">
+                    {% endif %}
+                  <img src="{{ post.image | relative_url }}" alt="no image" class="h-full w-full object-cover transition-transform duration-300 hover:scale-105 animate-slide-up">
+                </div>
+                <div class="p-4 space-y-2">
+                  <h2 class="text-mb md:text-lg text-gray-100">{{ post.title }}</h2>
+                  <p class="text-xs md:text-sm text-gray-300">{{ post.date | date: "%B %d, %Y" }}</p>
+                  <p class="text-xs md:text-sm mt-3 text-gray-400">{{ post.excerpt | strip_html | truncate: 150 }}</p>
+                </div>
+              </div>
             </a>
 
             {% endfor %}

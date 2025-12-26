@@ -6,7 +6,7 @@
     "github": "https://github.com/CodeCraftAyan/PokedexWebApp",
     "visit": "https://codecraftayan.github.io/PokedexWebApp/",
     "date": "2025-01-26",
-    "label": "Web App"
+    "label": ["Web App", "HTML", "TailwindCSS", "JavaScript", "API"]
   },
   {
     "title": "Python Mini Projects",
@@ -24,7 +24,7 @@
     "github": "https://github.com/CodeCraftAyan/Random-Anime-Meme-App",
     "visit": "https://random-anime-meme-app.onrender.com",
     "date": "2025-07-26",
-    "label": "Web App"
+    "label": ["Web App", "Flask", "API"]
   },
   {
     "title": "Flask Todo App",
@@ -33,7 +33,7 @@
     "github": "https://github.com/CodeCraftAyan/Flask-Todo-App",
     "visit": null,
     "date": "2025-08-02",
-    "label": "Web App"
+    "label": ["Web App", "Flask", "TailwindCSS", "Python"]
   },
   {
     "title": "Devil Fruit Catcher",
@@ -42,7 +42,7 @@
     "github": "https://github.com/CodeCraftAyan/Devil-Fruit-Catcher",
     "visit": null,
     "date": "2025-09-05",
-    "label": "Game"
+    "label": ["Game", "Pygame", "Python"]
   },
   {
     "title": "Ayan Mandal (Portfolio)",
@@ -51,6 +51,6 @@
     "github": "https://github.com/CodeCraftAyan/Ayan-Mandal",
     "visit": null,
     "date": "2025-09-07",
-    "label": "Web App"
+    "label": ["Web App", "Ruby", "Jekyll", "TailwindCSS"]
   }
 ]

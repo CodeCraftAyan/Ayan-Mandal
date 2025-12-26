@@ -4,13 +4,13 @@ title: "Attend GDG Pre-Devfest Workshop"
 date: 2025-12-20
 layout: post
 icon: "google"
-i_color: "emerald"
+i_color: "white"
 
 ---
 
-<img src="{{ site.baseurl }}/assets/image/experience/GDG_workshop.jpeg" alt="Arm Experience Logo">
-
 ## Safety First: Hands-on with GeminiCLI & Model Armor for Security
+
+<img src="{{ site.baseurl }}/assets/image/experience/GDG_workshop.jpeg" alt="Arm Experience Logo">
 
 I attended the **GDG Kolkata Pre-DevFest Workshop** in a spontaneous and fun way, a friend informed me about the session at the last moment, and I decided to join out of curiosity.
 

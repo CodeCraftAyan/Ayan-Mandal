@@ -9,16 +9,16 @@ permalink: /projects/
 <div>
 
     <div class="mt-4 mb-6 flex flex-wrap justify-start gap-3">
-        <button class="filter-btn text-gray-300 hover:bg-gray-700 bg-gray-800 px-5 py-2 rounded-md text-sm sm:text-base" data-label="all">
+        <button class="filter-btn text-gray-300 border border-gray-700 shadow-lg hover:border-indigo-700 hover:shadow-xl transition-all duration-300 animate-slide-left hover:text-indigo-400 px-5 py-2 rounded-md text-sm sm:text-base" data-label="all">
             All
         </button>
-        <button class="filter-btn text-gray-300 hover:bg-gray-700 bg-gray-800 px-5 py-2 rounded-md text-sm sm:text-base" data-label="Web App">
+        <button class="filter-btn text-gray-300 border border-gray-700 shadow-lg hover:border-indigo-700 hover:shadow-xl transition-all duration-300 animate-slide-left hover:text-indigo-400 px-5 py-2 rounded-md text-sm sm:text-base" data-label="Web App">
             Web Apps
         </button>
-        <button class="filter-btn text-gray-300 hover:bg-gray-700 bg-gray-800 px-5 py-2 rounded-md text-sm sm:text-base" data-label="CLI">
+        <button class="filter-btn text-gray-300 border border-gray-700 shadow-lg hover:border-indigo-700 hover:shadow-xl transition-all duration-300 animate-slide-left hover:text-indigo-400 px-5 py-2 rounded-md text-sm sm:text-base" data-label="CLI">
             CLI
         </button>
-        <button class="filter-btn text-gray-300 hover:bg-gray-700 bg-gray-800 px-5 py-2 rounded-md text-sm sm:text-base" data-label="Game">
+        <button class="filter-btn text-gray-300 border border-gray-700 shadow-lg hover:border-indigo-700 hover:shadow-xl transition-all duration-300 animate-slide-left hover:text-indigo-400 px-5 py-2 rounded-md text-sm sm:text-base" data-label="Game">
             Games
         </button>
     </div>
@@ -29,7 +29,7 @@ permalink: /projects/
         {% if site.data.projects != empty %}
             {% assign sorted_projects = site.data.projects | sort: "date" | reverse %}
             {% for project in sorted_projects %}
-                <div class="project-card max-w-sm bg-gray-900 text-white rounded-xl shadow-lg overflow-hidden border border-gray-700 hover:shadow-xl transition-shadow duration-300 animate-slide-up" data-label="{{ project.label | join: ',' }}">
+                <div class="project-card max-w-sm bg-gray-900 text-white rounded-xl shadow-lg overflow-hidden border border-gray-700 shadow-lg hover:border-indigo-700 hover:shadow-xl transition-all duration-300 animate-slide-up" data-label="{{ project.label | join: ',' }}">
                     <div class="h-48 overflow-hidden">
                         {% if project.image %}
                             <img src="{{ project.image }}" alt="{{ project.title }}" class="h-full w-full object-cover animate-slide-up">
@@ -43,18 +43,23 @@ permalink: /projects/
                         <p class="text-sm text-gray-400">
                             {{ project.description }}
                         </p>
-                        <div class="flex gap-3 pt-2">
+                        <div class="absolute top-1 right-1 flex gap-3 p-2">
                             {% if project.github %}
-                                <a href="{{ project.github }}" target="_blank" class="px-4 py-1 bg-gray-800 text-white rounded hover:bg-gray-700 transition">
-                                    <span class="bi bi-github"></span> GitHub
-                                </a>
+                            <a href="{{ project.github }}" class="px-3 py-2 border border-gray-700 shadow-lg hover:border-indigo-700 hover:shadow-xl transition-all duration-300 animate-slide-right hover:text-indigo-400 rounded-lg">
+                                <span class="bi bi-github text-2xl"></span>
+                            </a>
                             {% endif %}
 
                             {% if project.visit %}
-                                <a href="{{ project.visit }}" target="_blank" class="px-4 py-1 bg-emerald-600 text-white rounded hover:bg-emerald-500 transition">
-                                    <span class="bi bi-globe"></span> Visit
-                                </a>
+                            <a href="{{ project.visit }}" class="px-3 py-2 border border-gray-700 shadow-lg hover:border-indigo-700 hover:shadow-xl transition-all duration-300 animate-slide-right hover:text-indigo-400 rounded-lg">
+                                <span class="bi bi-link-45deg text-2xl"></span>
+                            </a>
                             {% endif %}
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            {% for i in project.label %}
+                            <span class="text-xs px-3 py-1 rounded-xl bg-indigo-600 animate-slide-left">{{ i }}</span>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>

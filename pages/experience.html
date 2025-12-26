@@ -6,22 +6,51 @@ permalink: /experience/
 
 ---
 
-<div class="pt-4">
+<div class="pt-4 flex flex-col gap-4">
     <ul class="flex flex-col gap-4">
         {% if site.experience != empty %}
             {% for exp in site.experience %}
-                <li class="animate-slide-up">
-                    <a href="{{ exp.url | relative_url }}" class="flex flex-wrap items-center justify-between px-0 md:px-4 py-3 border-b border-gray-500 shadow hover:bg-gray-800 transition duration-300 cursor-pointer">
-                        <span class="animate-slide-left text-md md:text-xl font-semibold text-white">
-                            <i class="text-{{ exp.i_color }}-400 bi bi-{{ exp.icon }}"></i>
-                            {{ exp.title }}
-                        </span>
-                        <span class="animate-slide-right text-sm text-gray-400">{{ exp.date | date: "%B %d, %Y" }}</span>
-                    </a>
-                </li>
+                
+                <a href="{{ exp.url | relative_url }}">
+                    <div class="experience-card relative bg-gray-800 rounded-lg p-4 flex flex-col sm:flex-row gap-4 sm:gap-6 items-center border border-gray-700 shadow-lg hover:border-indigo-700 hover:shadow-xl transition-all duration-300 animate-slide-up">
+                
+                      <div class="absolute top-3 right-3 px-3 py-2 rounded-md bg-gray-700 hover:text-indigo-400 transition animate-slide-left">
+                        <i class="bi bi-box-arrow-up-right"></i>
+                      </div>
+                
+                      <div
+                        class="shrink-0 h-28 w-28 sm:h-32 sm:w-32 bg-gray-700 rounded-md flex items-center justify-center animate-slide-down">
+                
+                        <div class="flex flex-col items-center gap-0 sm:gap-1">
+                
+                          <div class="pixel-plant flex items-end"></div>
+                
+                          <div class="pot-base h-3 w-20 rounded-full"></div>
+                          <div class="pot-body h-10 w-16 -mt-2 rounded-md flex items-center justify-center">
+                            <i class="bi bi-{{ exp.icon }} text-{{ exp.i_color }}-400"></i>
+                          </div>
+                
+                        </div>
+                      </div>
+            
+                      <div class="flex flex-col justify-center items-center sm:items-start text-center sm:text-left animate-slide-right">
+                        <h2 class="text-lg sm:text-xl font-semibold">
+                          {{ exp.title }}
+                        </h2>
+                        <p class="text-gray-300 text-sm">
+                          {{ exp.date | date: "%B %d, %Y" }}
+                        </p>
+                        <p class="hidden sm:block text-sm text-gray-400 mt-1">
+                          {{ exp.excerpt | strip_html | truncate: 150 }}
+                        </p>
+                      </div>
+                
+                    </div>
+                </a>
             {% endfor %}
         {% else %}
             <p class="text-orange-400 py-4 animate-slide-right">Experience not shared yet</p>
         {% endif %}
     </ul>
+
 </div>

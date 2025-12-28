@@ -31,15 +31,15 @@
     <header class="w-full max-w-4xl mx-auto flex flex-col sm:flex-row md:flex-row  md:items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 py-4">
 
         <a href="{{ '/' | relative_url }}">
-            <h2 class="text-2xl font-bold text-gray-100 animate-slide-down">Ayan Mandal</h2>
+            <h2 class="text-2xl font-bold text-gray-100 animate-slide-down">Ayan <span class="text-indigo-400">Mandal</span></h2>
         </a>
         
         <nav class="animate-slide-right">
             <ul class="flex items-end sm:items-center gap-2 sm:gap-4 text-gray-400">
-                <li><a href="{{ '/me/' | relative_url }}" class="hover:text-gray-300 transition">Me</a></li>
-                <li><a href="{{ '/blogs/' | relative_url }}" class="hover:text-gray-300 transition">Blogs</a></li>
-                <li><a href="{{ '/experience/' | relative_url }}" class="hover:text-gray-300 transition">Experience</a></li>
-                <li><a href="{{ '/projects/' | relative_url }}" class="hover:text-gray-300 transition">Projects</a></li>
+                <li><a href="{{ '/me/' | relative_url }}" class="relative text-gray-200 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-rose-400 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-gray-300">Me</a></li>
+                <li><a href="{{ '/blogs/' | relative_url }}" class="relative text-gray-200 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-yellow-400 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-gray-300">Blogs</a></li>
+                <li><a href="{{ '/experience/' | relative_url }}" class="relative text-gray-200 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-green-400 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-gray-300">Experience</a></li>
+                <li><a href="{{ '/projects/' | relative_url }}" class="relative text-gray-200 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-blue-400 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-gray-300">Projects</a></li>
             </ul>
         </nav>
 
@@ -55,19 +55,19 @@
         <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
             
             <div class="text-sm text-center sm:text-left animate-slide-left">
-                <p> &copy; <span id="year"></span> <span class="text-emerald-400">Ayan Mandal</span>. All rights reserved.</p>
+                <p> &copy; <span id="year"></span> <span class="text-indigo-400">Ayan Mandal</span>. All rights reserved.</p>
             </div>
 
             <ul class="flex gap-6 text-sm animate-slide-right">
                 <li>
                     <a href="https://github.com/CodeCraftAyan" target="_blank" 
-                    class="bi bi-github hover:text-white transition-colors">
+                    class="bi bi-github relative text-gray-500 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-indigo-400 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-gray-300">
                     GitHub
                     </a>
                 </li>
                 <li>
                     <a id="popup-btn" 
-                    class="popup-btn bi bi-envelope hover:text-white transition-colors cursor-pointer">
+                    class="popup-btn bi bi-envelope cursor-pointer relative text-gray-500 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-indigo-400 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-gray-300">
                     Contact
                     </a>
                 </li>
@@ -79,9 +79,9 @@
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 
-    <div id="open-popup" class="hidden fixed bottom-5 left-5 md:bottom-10 md:left-10 bg-emerald-500 backdrop-blur-md text-white p-6 shadow-2xl w-[90%] md:w-[22rem] sm:w-[22rem] transform transition-all duration-500 ease-in-out animate-slide-left">
+    <div id="open-popup" class="hidden fixed bottom-5 left-5 md:bottom-10 md:left-10 bg-transparent border border-indigo-500 rounded-xl backdrop-blur-md text-white p-6 shadow-2xl w-[90%] sm:w-[22rem] md:w-[22rem] transform transition-all duration-500 ease-in-out animate-slide-left">
 
-        <div class="flex justify-between items-center border-b border-emerald-400 pb-3">
+        <div class="flex justify-between items-center border-b border-indigo-500 pb-3">
             <h2 class="text-base md:text-lg font-medium tracking-wide">Contact Information</h2>
             <button id="close-popup" 
                     class="ml-4 text-xl font-bold hover:text-red-400 transition-colors duration-200">

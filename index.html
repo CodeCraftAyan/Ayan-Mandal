@@ -24,7 +24,8 @@ permalink: /
         </div>
 
         <div class="pl-2">
-            <h2 class="text-2xl sm:text-3xl md:text-3xl lg:text-3xl mb-2 animate-slide-right">Hey, I'm Ayan
+            <h2 class="text-2xl sm:text-3xl md:text-3xl lg:text-3xl mb-2 animate-slide-right">Hey, I'm 
+                <span class="text-indigo-400">Ayan</span>
                 <span>👋</span>
             </h2>
             <p class="text-sm text-gray-300">
@@ -115,7 +116,10 @@ permalink: /
             {% assign sorted_projects = site.data.projects | sort: "date" | reverse %}
             {% for project in sorted_projects limit:2 %}
                 <a href="{{ project.github }}" target="_blank">  
-                    <div class="max-w-sm bg-gray-900 hover:bg-gray-800 cursor-pointer  text-white rounded-xl shadow-lg overflow-hidden border border-gray-700 hover:shadow-xl transition-shadow duration-300 animate-slide-up">
+                    <div class="max-w-sm bg-gray-900 hover:bg-gray-800 cursor-pointer  text-white rounded-xl shadow-lg overflow-hidden border border-gray-700 hover:border-indigo-500 hover:shadow-xl transition-shadow duration-300 animate-slide-up">
+                        <div class="absolute top-2 right-2 z-10 px-3 py-2 rounded-lg bg-gray-700 transition hover:text-indigo-400">
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </div>
                         <div class="h-40 overflow-hidden">
                             {% if project.image %}
                             <img src="{{ project.image }}" alt="{{ project.title }}" class="h-full w-full object-cover animate-slide-up">
@@ -146,7 +150,7 @@ permalink: /
             {% if site.blog != empty %}
                 {% assign sorted_posts = site.blog | sort: "date" | reverse %}
                 {% for post in sorted_posts limit:4 %}
-                    <a href="{{ post.url | relative_url }}" class="p-2 cursor-pointer hover:bg-gray-800 rounded-md hover:shadow-lg">
+                    <a href="{{ post.url | relative_url }}" class="p-4 cursor-pointer hover:bg-gray-800 hover:border hover:border-indigo-700 hover:shadow-xl transition-shadow duration-300 rounded-md hover:shadow-lg">
                         <h2 class="text-gray-200">{{ post.title }}</h2>
                         <p class="text-gray-400 text-sm">{{ post.date | date: "%B %d, %Y" }}</p>
                     </a>

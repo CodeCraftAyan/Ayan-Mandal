@@ -14,7 +14,7 @@ permalink: /
     <div class="flex flex-wrap items-center gap-6 mt-4 mb-6 md:my-8">
         <div class="relative h-40 w-40 animate-slide-left">
             <div
-                class="absolute inset-0 overflow-hidden rounded-full border-2 border-l-0 border-r-0 border-gray-500 animate-spin">
+                class="absolute inset-0 overflow-hidden rounded-full border-2 border-l-0 border-b-0 border-t-indigo-900 border-r-indigo-700 animate-spin duration-1000/2">
             </div>
 
             <div
@@ -47,64 +47,50 @@ permalink: /
 
     <div class="px-2 animate-slide-down">
         <p class="text-sm md:text-base text-gray-200">
-            I’m a passionate developer specializing in Python, AI, and web technologies. I focus on building scalable
-            solutions and transforming ideas into practical, user-friendly applications that make a real impact.
+            I’m a passionate developer who enjoys working with Python and automating things, currently building a personal game project. Alongside this, I’m learning pixel art to create my own game assets and strengthen my creative skills.
         </p>
     </div>
 
     <div class="px-2 py-10 animate-slide-up">
 
-        <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 text-xs md:text-base">
-            <li class="p-2 border border-blue-300 text-blue-300 rounded">
-                <i class="bi bi-braces"></i>
-                C/C++
+        <ul class="flex items-center flex-wrap gap-2 md:gap-3 text-xs md:text-sm">
+            <li class="py-1 px-3 text-sky-400 border border-sky-400 rounded-full">
+                <i class="bi bi-braces"> C/C++</i>
             </li>
-            <li class="p-2 border border-orange-300 text-orange-300 rounded w-full">
-                <i class="bi bi-filetype-html"></i>
-                HTML 5
+            <li class="py-1 px-3 text-orange-400 border border-orange-400 rounded-full">
+                <i class="bi bi-filetype-html"> HTML5</i>
             </li>
-            <li class="p-2 border border-blue-300 text-blue-300 rounded">
-                <i class="bi bi-filetype-css"></i>
-                CSS
+            <li class="py-1 px-3 text-blue-400 border border-blue-400 rounded-full">
+                <i class="bi bi-filetype-css"> CSS</i>
             </li>
-            <li class="p-2 border border-yellow-300 text-yellow-300 rounded">
-                <i class="bi bi-filetype-js"></i>
-                JavaScript
+            <li class="py-1 px-3 text-yellow-400 border border-yellow-400 rounded-full">
+                <i class="bi bi-filetype-js"> JavaScript</i>
             </li>
-            <li class="p-2 border border-emerald-300 text-emerald-300 rounded">
-                <i class="bi bi-filetype-py"></i>
-                Python
+            <li class="py-1 px-3 text-emerald-400 border border-emerald-400 rounded-full">
+                <i class="bi bi-filetype-py"> Python</i>
             </li>
-            <li class="p-2 border border-indigo-300 text-indigo-300 rounded">
-                <i class="bi bi-folder"></i>
-                Tailwind CSS
+            <li class="py-1 px-3 text-indigo-400 border border-indigo-400 rounded-full">
+                <i class="bi bi-folder"> Tailwind CSS</i>
             </li>
-            <li class="p-2 border border-rose-300 text-rose-300 rounded">
-                <i class="bi bi-git"></i>
-                Git
+            <li class="py-1 px-3 text-red-400 border border-red-400 rounded-full">
+                <i class="bi bi-git"> Git</i>
             </li>
-            <li class="p-2 border border-gray-300 text-gray-300 rounded">
-                <i class="bi bi-github"></i>
-                Github
+            <li class="py-1 px-3 text-gray-400 border border-gray-400 rounded-full">
+                <i class="bi bi-github"> Github</i>
             </li>
-            <li class="p-2 border border-green-500 text-green-500 rounded">
-                <i class="bi bi-folder"></i>
-                Django
+            <li class="py-1 px-3 text-green-400 border border-green-400 rounded-full">
+                <i class="bi bi-folder"> Django</i>
             </li>
-            <li class="p-2 border border-gray-300 text-gray-300 rounded">
-                <i class="bi bi-folder"></i>
-                Flask
+            <li class="py-1 px-3 text-gray-400 border border-gray-400 rounded-full">
+                <i class="bi bi-folder"> Flask</i>
             </li>
-            <li class="p-2 border border-violet-300 text-violet-300 rounded">
-                <i class="bi bi-gear"></i>
-                Rest API
+            <li class="py-1 px-3 text-violet-400 border border-violet-400 rounded-full">
+                <i class="bi bi-gear"> Rest API</i>
             </li>
-            <li class="p-2 border border-red-300 text-red-300 rounded">
-                <i class="bi bi-database"></i>
-                Database
+            <li class="py-1 px-3 text-red-400 border border-red-400 rounded-full">
+                <i class="bi bi-database"> Database</i>
             </li>
         </ul>
-
     </div>
 
 
@@ -116,8 +102,9 @@ permalink: /
             {% assign sorted_projects = site.data.projects | sort: "date" | reverse %}
             {% for project in sorted_projects limit:2 %}
                 <a href="{{ project.github }}" target="_blank">  
-                    <div class="max-w-sm bg-gray-900 hover:bg-gray-800 cursor-pointer  text-white rounded-xl shadow-lg overflow-hidden border border-gray-700 hover:border-indigo-500 hover:shadow-xl transition-shadow duration-300 animate-slide-up">
-                        <div class="absolute top-2 right-2 z-10 px-3 py-2 rounded-lg bg-gray-700 transition hover:text-indigo-400">
+                    <div class="max-w-sm bg-transparent hover:bg-gray-900 cursor-pointer  text-white rounded-xl shadow-lg overflow-hidden border border-gray-700 hover:border-indigo-500 hover:shadow-xl transition-shadow duration-300 animate-slide-up">
+                        <div class="absolute top-2 right-2 z-10 px-3 py-2 rounded-lg bg-transparent border border-gray-7
+                        00 hover:border-indigo-500 transition hover:text-indigo-400">
                             <i class="bi bi-box-arrow-up-right"></i>
                         </div>
                         <div class="h-40 overflow-hidden">
@@ -150,7 +137,7 @@ permalink: /
             {% if site.blog != empty %}
                 {% assign sorted_posts = site.blog | sort: "date" | reverse %}
                 {% for post in sorted_posts limit:4 %}
-                    <a href="{{ post.url | relative_url }}" class="p-4 cursor-pointer hover:bg-gray-800 hover:border hover:border-indigo-700 hover:shadow-xl transition-shadow duration-300 rounded-md hover:shadow-lg">
+                    <a href="{{ post.url | relative_url }}" class="p-4 cursor-pointer hover:bg-gray-900 hover:border hover:border-indigo-700 hover:shadow-xl transition-shadow duration-300 rounded-md hover:shadow-lg">
                         <h2 class="text-gray-200">{{ post.title }}</h2>
                         <p class="text-gray-400 text-sm">{{ post.date | date: "%B %d, %Y" }}</p>
                     </a>

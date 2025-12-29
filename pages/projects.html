@@ -29,7 +29,7 @@ permalink: /projects/
         {% if site.data.projects != empty %}
             {% assign sorted_projects = site.data.projects | sort: "date" | reverse %}
             {% for project in sorted_projects %}
-                <div class="project-card max-w-sm bg-gray-900 text-white rounded-xl shadow-lg overflow-hidden border border-gray-700 shadow-lg hover:border-indigo-700 hover:shadow-xl transition-all duration-300 animate-slide-up" data-label="{{ project.label | join: ',' }}">
+                <div class="project-card max-w-sm bg-transparent text-white rounded-xl shadow-lg overflow-hidden border border-gray-700 shadow-lg hover:border-indigo-700 hover:shadow-xl transition-all duration-300 animate-slide-up" data-label="{{ project.label | join: ',' }}">
                     <div class="h-48 overflow-hidden">
                         {% if project.image %}
                             <img src="{{ project.image }}" alt="{{ project.title }}" class="h-full w-full object-cover animate-slide-up">

@@ -52,5 +52,14 @@
     "visit": null,
     "date": "2025-09-07",
     "label": ["Web App", "Ruby", "Jekyll", "TailwindCSS"]
+  },
+  {
+    "title": "Asteroid Destroyer",
+    "description": "A simple game where you destroy asteroids.",
+    "image": null,
+    "github": "https://github.com/CodeCraftAyan/Asteroid-Destroyer",
+    "visit": null,
+    "date": "2025-12-30",
+    "label": ["Game", "GDScript", "Godot Engine", "2D Game"]
   }
 ]

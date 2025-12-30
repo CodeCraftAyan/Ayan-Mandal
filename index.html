@@ -25,7 +25,7 @@ permalink: /
 
         <div class="pl-2">
             <h2 class="text-2xl sm:text-3xl md:text-3xl lg:text-3xl mb-2 animate-slide-right">Hey, I'm 
-                <span class="text-indigo-400">Ayan</span>
+                <span class="text-indigo-400 underline decoration-white">Ayan</span>
                 <span>👋</span>
             </h2>
             <p class="text-sm text-gray-300">
@@ -96,7 +96,7 @@ permalink: /
 
     <div class="mt-4 mb-10">
 
-        <p class="text-gray-400 bg-gray-800 text-sm p-2 mb-4 overflow-hidden rounded w-32 animate-slide-left">Recent projects</p>
+        <p class="text-gray-400 bg-gray-900 border border-indigo-400 text-sm p-2 mb-4 overflow-hidden rounded w-36 text-center animate-slide-left">Recent projects</p>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-0 pb-4 md:p-4">
             {% assign sorted_projects = site.data.projects | sort: "date" | reverse %}
@@ -130,7 +130,7 @@ permalink: /
 
     <div class="mt-4 mb-10">
 
-        <p class="text-gray-400 bg-gray-800 text-sm p-2 mb-4 overflow-hidden rounded w-28 animate-slide-left">Recent posts</p>
+        <p class="text-gray-400 bg-gray-900 border border-indigo-400 text-sm p-2 mb-4 overflow-hidden rounded w-36 text-center animate-slide-left">Recent posts</p>
 
         <div class="flex flex-col pb-4 animate-slide-right">
             {% if site.blog != empty %}

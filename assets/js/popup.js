@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
             clearTimeout(autoCloseTimer);
             autoCloseTimer = setTimeout(() => {
                 popup.classList.add("hidden");
-            }, 5000);
+            }, 6000);
         });
     });
 

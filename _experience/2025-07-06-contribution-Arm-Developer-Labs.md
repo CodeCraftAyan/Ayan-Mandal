@@ -3,14 +3,14 @@
 title: "Contribution to Arm Developer Labs"
 date: 2025-09-04
 layout: post
-icon: "patch-check-fill"
-i_color: "emerald"
+icon: "patch-check"
+i_color: "white"
 
 ---
 
-<img src="{{ site.baseurl }}/assets/image/experience/arm.png" alt="Arm Experience Logo">
-
 During my learning journey, I had the opportunity to contribute to **[Arm Developer Labs](https://github.com/arm-university/Arm-Developer-Labs-Staging)**, an open-source project focused on providing practical labs and learning resources for developers.  
+
+<img src="{{ site.baseurl }}/assets/image/experience/arm.png" alt="Arm Experience Logo">
 
 My contribution involved working on **issues and improvements** within the repository, where I learned how large-scale projects are maintained and how collaboration happens in real-world open-source communities.  
 

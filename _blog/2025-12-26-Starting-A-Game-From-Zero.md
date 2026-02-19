@@ -1,7 +1,9 @@
 ---
+
 title: "Starting a Game Project From Zero"
 date: 2025-12-26
 layout: post
+
 ---
 
 ## About This Project

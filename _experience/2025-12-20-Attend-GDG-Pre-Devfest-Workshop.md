@@ -10,7 +10,7 @@ i_color: "white"
 
 ## Safety First: Hands-on with GeminiCLI & Model Armor for Security
 
-<img src="{{ site.baseurl }}/assets/image/experience/GDG_workshop.jpeg" alt="Arm Experience Logo">
+<img src="{{ site.baseurl }}/assets/image/experience/GDG_workshop.jpeg" alt="GDG Workshop">
 
 I attended the **GDG Kolkata Pre-DevFest Workshop** in a spontaneous and fun way, a friend informed me about the session at the last moment, and I decided to join out of curiosity.
 
